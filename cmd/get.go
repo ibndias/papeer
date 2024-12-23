@@ -10,7 +10,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/lapwat/papeer/book"
+	"github.com/ibndias/papeer/book"
 )
 
 type GetOptions struct {

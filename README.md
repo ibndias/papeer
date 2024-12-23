@@ -31,12 +31,12 @@
 ## From source
 
 ```sh
-go install github.com/lapwat/papeer@latest
+go install github.com/ibndias/papeer@latest
 ```
 
 ## From binary
 
-Download [latest release](https://github.com/lapwat/papeer/releases/latest) for Windows, MacOS (darwin) and Linux.
+Download [latest release](https://github.com/ibndias/papeer/releases/latest) for Windows, MacOS (darwin) and Linux.
 
 ## MOBI support
 
@@ -46,7 +46,7 @@ Install kindlegen to export websites to Kindle compatible ebooks, Linux only.
 
 ```sh
 TMPDIR=$(mktemp -d -t papeer-XXXXX)
-curl -L https://github.com/lapwat/papeer/releases/download/kindlegen/kindlegen_linux_2.6_i386_v2_9.tar.gz > $TMPDIR/kindlegen.tar.gz
+curl -L https://github.com/ibndias/papeer/releases/download/kindlegen/kindlegen_linux_2.6_i386_v2_9.tar.gz > $TMPDIR/kindlegen.tar.gz
 tar xzvf $TMPDIR/kindlegen.tar.gz -C $TMPDIR
 chmod +x $TMPDIR/kindlegen
 sudo mv $TMPDIR/kindlegen /usr/local/bin
