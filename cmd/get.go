@@ -174,7 +174,7 @@ var getCmd = &cobra.Command{
 		c.SetName(c.SubChapters()[0].Name())
 
 		if getOpts.Format == "none" {
-			fmt.Println(ToMarkdownString(c))
+			fmt.Println(book.ToMarkdownString(c))
 		}
 
 		if getOpts.Format == "md" {
