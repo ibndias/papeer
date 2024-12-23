@@ -1,4 +1,4 @@
-module github.com/lapwat/papeer
+module github.com/ibndias/papeer
 
 go 1.17
 
