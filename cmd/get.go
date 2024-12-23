@@ -43,7 +43,7 @@ func init() {
 
 	getCmd.Flags().StringVarP(&getOpts.name, "name", "n", "", "book name (default: page title)")
 	getCmd.Flags().StringVarP(&getOpts.author, "author", "a", "", "book author")
-	getCmd.Flags().StringVarP(&getOpts.Format, "format", "f", "md", "file format [md, json, html, epub, mobi]")
+	getCmd.Flags().StringVarP(&getOpts.Format, "format", "f", "md", "file format [md, json, html, epub, mobi, none]")
 	getCmd.Flags().StringVarP(&getOpts.output, "output", "", "", "file name (default: book name)")
 	getCmd.Flags().BoolVarP(&getOpts.stdout, "stdout", "", false, "print to standard output")
 	getCmd.Flags().BoolVarP(&getOpts.images, "images", "", false, "retrieve images only")
@@ -80,6 +80,7 @@ var getCmd = &cobra.Command{
 			"html": true,
 			"epub": true,
 			"mobi": true,
+			"none": true,
 		}
 		if formatEnum[getOpts.Format] != true {
 			return fmt.Errorf("invalid format specified: %s", getOpts.Format)
