@@ -12,7 +12,7 @@ import (
 	"github.com/jedib0t/go-pretty/v6/table"
 	cobra "github.com/spf13/cobra"
 
-	"github.com/lapwat/papeer/book"
+	"github.com/ibndias/papeer/book"
 )
 
 type ListOptions struct {
